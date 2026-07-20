@@ -1,0 +1,184 @@
+// Prisma schema del CRM interno: clientes potenciales, consultas, y
+// asignacion automatica por geolocalizacion a distribuidores/tecnicos.
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ---------------------------------------------------------------------------
+// Cobertura geografica: localidades, tecnicos (empleados) y distribuidores
+// (clientes que revenden nuestros productos a talleres/pinturerias de su zona)
+// ---------------------------------------------------------------------------
+
+model Localidad {
+  id            String   @id @default(cuid())
+  nombre        String
+  region        String // ej: "CABA", "BA GBA", "BA Interior", "Neuquen"...
+  zona          String? // ej: "Norte", "Sur", "Oeste", "Centro", "Costa"
+  zonificacion  Int? // numero de zonificacion (1-4) -> mapea a un Tecnico
+  poblacion     Int?
+  lat           Float?
+  lng           Float?
+  geocodedAt    DateTime?
+
+  tecnicoId     String?
+  tecnico       Tecnico? @relation(fields: [tecnicoId], references: [id])
+
+  distribuidores LocalidadDistribuidor[]
+  clientes       Cliente[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([nombre, region])
+  @@index([lat, lng])
+}
+
+model Tecnico {
+  id     String  @id @default(cuid())
+  nombre String
+  email  String?
+  telefono String?
+  zona   String? // zona que tiene asignada, ej "Norte"
+  numero Int?    @unique // numero de zonificacion que representa (1-4)
+  activo Boolean @default(true)
+
+  localidades      Localidad[]
+  consultasAsignadas ConsultaAsignacion[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Distribuidor {
+  id       String  @id @default(cuid())
+  nombre   String
+  marca    String? // marca principal que distribuye (PPG, 2K, 4K, ...)
+  email    String?
+  telefono String?
+  activo   Boolean @default(true)
+
+  localidades        LocalidadDistribuidor[]
+  consultasAsignadas ConsultaAsignacion[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([nombre])
+}
+
+// Un distribuidor puede cubrir varias localidades, y una localidad puede
+// tener mas de un distribuidor asignado (p.ej. por marca distinta).
+model LocalidadDistribuidor {
+  id             String       @id @default(cuid())
+  localidadId    String
+  localidad      Localidad    @relation(fields: [localidadId], references: [id], onDelete: Cascade)
+  distribuidorId String
+  distribuidor   Distribuidor @relation(fields: [distribuidorId], references: [id], onDelete: Cascade)
+  marca          String? // marca de esta asignacion puntual (puede diferir de Distribuidor.marca)
+
+  createdAt DateTime @default(now())
+
+  @@unique([localidadId, distribuidorId, marca])
+}
+
+// ---------------------------------------------------------------------------
+// Clientes potenciales y consultas
+// ---------------------------------------------------------------------------
+
+enum CanalContacto {
+  LLAMADA
+  WHATSAPP
+  EMAIL
+  PRESENCIAL
+  FORMULARIO_WEB
+  OTRO
+}
+
+enum EstadoConsulta {
+  NUEVA
+  ASIGNADA
+  SIN_COBERTURA
+  EN_GESTION
+  CERRADA
+}
+
+enum MetodoAsignacion {
+  ZONA_EXACTA
+  ZONA_CERCANA
+  SIN_COBERTURA
+}
+
+enum TipoAsignado {
+  DISTRIBUIDOR
+  TECNICO
+}
+
+model Cliente {
+  id        String  @id @default(cuid())
+  nombre    String
+  telefono  String?
+  email     String?
+  direccion String? // direccion de texto libre ingresada
+  rubro     String? // ej: taller, pintureria, concesionaria
+
+  // resultado de geocodificar `direccion`
+  lat        Float?
+  lng        Float?
+  localidadId String?
+  localidad   Localidad? @relation(fields: [localidadId], references: [id])
+
+  consultas Consulta[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Consulta {
+  id        String        @id @default(cuid())
+  clienteId String
+  cliente   Cliente       @relation(fields: [clienteId], references: [id], onDelete: Cascade)
+
+  canal   CanalContacto
+  motivo  String // que consulto el cliente
+  marcaInteres String? // marca de interes si la menciono (PPG, 2K, 4K...)
+
+  estado           EstadoConsulta   @default(NUEVA)
+  metodoAsignacion MetodoAsignacion?
+
+  asignaciones ConsultaAsignacion[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([clienteId])
+}
+
+// Registro de a quien se deriva cada consulta (puede ser mas de un
+// distribuidor, y/o el tecnico responsable de la zona como respaldo)
+// y el estado de la notificacion por email enviada.
+model ConsultaAsignacion {
+  id         String       @id @default(cuid())
+  consultaId String
+  consulta   Consulta     @relation(fields: [consultaId], references: [id], onDelete: Cascade)
+
+  tipo TipoAsignado
+
+  distribuidorId String?
+  distribuidor   Distribuidor? @relation(fields: [distribuidorId], references: [id])
+  tecnicoId      String?
+  tecnico        Tecnico?      @relation(fields: [tecnicoId], references: [id])
+
+  notificado   Boolean   @default(false)
+  notificadoAt DateTime?
+  error        String?
+
+  createdAt DateTime @default(now())
+
+  @@index([consultaId])
+}

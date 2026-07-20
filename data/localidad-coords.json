@@ -1,0 +1,570 @@
+{
+  "CABA|CABA": {
+    "lat": -34.6037,
+    "lng": -58.3816
+  },
+  "BA GBA|La Matanza": {
+    "lat": -34.68,
+    "lng": -58.5647
+  },
+  "BA GBA|Lomas de Zamora": {
+    "lat": -34.7597,
+    "lng": -58.4009
+  },
+  "BA GBA|Quilmes": {
+    "lat": -34.7206,
+    "lng": -58.2519
+  },
+  "BA GBA|Almirante Brown": {
+    "lat": -34.7998,
+    "lng": -58.3903
+  },
+  "BA GBA|Merlo": {
+    "lat": -34.665,
+    "lng": -58.7288
+  },
+  "BA GBA|Moreno": {
+    "lat": -34.6516,
+    "lng": -58.7897
+  },
+  "BA GBA|Florencio Varela": {
+    "lat": -34.8201,
+    "lng": -58.2758
+  },
+  "BA GBA|Lanús": {
+    "lat": -34.705,
+    "lng": -58.3927
+  },
+  "BA GBA|General San Martín": {
+    "lat": -34.5764,
+    "lng": -58.5378
+  },
+  "BA GBA|Tigre": {
+    "lat": -34.4264,
+    "lng": -58.5796
+  },
+  "BA GBA|Pilar": {
+    "lat": -34.4586,
+    "lng": -58.9143
+  },
+  "BA GBA|Avellaneda": {
+    "lat": -34.6626,
+    "lng": -58.3654
+  },
+  "BA GBA|Tres de Febrero": {
+    "lat": -34.606,
+    "lng": -58.5636
+  },
+  "BA GBA|Berazategui": {
+    "lat": -34.7622,
+    "lng": -58.2109
+  },
+  "BA GBA|Malvinas Argentinas": {
+    "lat": -34.5147,
+    "lng": -58.706
+  },
+  "BA GBA|Esteban Echeverría": {
+    "lat": -34.8172,
+    "lng": -58.4642
+  },
+  "BA GBA|Morón": {
+    "lat": -34.6534,
+    "lng": -58.6198
+  },
+  "BA GBA|San Miguel": {
+    "lat": -34.5425,
+    "lng": -58.7117
+  },
+  "BA GBA|José C. Paz": {
+    "lat": -34.5069,
+    "lng": -58.7702
+  },
+  "BA GBA|San Isidro": {
+    "lat": -34.4707,
+    "lng": -58.5077
+  },
+  "BA GBA|Vicente López": {
+    "lat": -34.5267,
+    "lng": -58.4726
+  },
+  "BA GBA|Escobar": {
+    "lat": -34.3479,
+    "lng": -58.7929
+  },
+  "BA GBA|Ezeiza": {
+    "lat": -34.9146,
+    "lng": -58.5289
+  },
+  "BA GBA|Hurlingham": {
+    "lat": -34.5911,
+    "lng": -58.6372
+  },
+  "BA GBA|Ituzaingó": {
+    "lat": -34.6603,
+    "lng": -58.6717
+  },
+  "BA GBA|San Fernando": {
+    "lat": -34.4392,
+    "lng": -58.5589
+  },
+  "BA GBA|General Rodríguez": {
+    "lat": -34.6017,
+    "lng": -58.956
+  },
+  "BA GBA|Presidente Perón": {
+    "lat": -35.0333,
+    "lng": -58.3833
+  },
+  "BA GBA|San Vicente": {
+    "lat": -35.0281,
+    "lng": -58.4225
+  },
+  "BA GBA|Cañuelas": {
+    "lat": -35.05,
+    "lng": -58.7622
+  },
+  "BA GBA|Marcos Paz": {
+    "lat": -34.7833,
+    "lng": -58.8333
+  },
+  "BA GBA|La Plata": {
+    "lat": -34.9215,
+    "lng": -57.9545
+  },
+  "BA GBA|Zárate": {
+    "lat": -34.0967,
+    "lng": -59.0278
+  },
+  "BA GBA|Luján": {
+    "lat": -34.5703,
+    "lng": -59.1053
+  },
+  "BA GBA|Campana": {
+    "lat": -34.1642,
+    "lng": -58.9597
+  },
+  "BA GBA|Berisso": {
+    "lat": -34.8731,
+    "lng": -57.8842
+  },
+  "BA GBA|Ensenada": {
+    "lat": -34.8558,
+    "lng": -57.9153
+  },
+  "BA GBA|Exaltación de la Cruz": {
+    "lat": -34.2247,
+    "lng": -59.085
+  },
+  "BA Interior|General Pueyrredón": {
+    "lat": -38.0055,
+    "lng": -57.5426
+  },
+  "BA Interior|Bahía Blanca": {
+    "lat": -38.7183,
+    "lng": -62.2661
+  },
+  "BA Interior|San Nicolás": {
+    "lat": -33.3333,
+    "lng": -60.2167
+  },
+  "BA Interior|Tandil": {
+    "lat": -37.3217,
+    "lng": -59.1332
+  },
+  "BA Interior|Olavarría": {
+    "lat": -36.8927,
+    "lng": -60.3225
+  },
+  "BA Interior|Pergamino": {
+    "lat": -33.8925,
+    "lng": -60.573
+  },
+  "BA Interior|Junín": {
+    "lat": -34.5837,
+    "lng": -60.9432
+  },
+  "BA Interior|Necochea": {
+    "lat": -38.5545,
+    "lng": -58.7392
+  },
+  "BA Interior|La Costa": {
+    "lat": -36.6931,
+    "lng": -56.6912
+  },
+  "BA Interior|Azul": {
+    "lat": -36.7773,
+    "lng": -59.8586
+  },
+  "BA Interior|Mercedes": {
+    "lat": -34.6501,
+    "lng": -59.4302
+  },
+  "BA Interior|Chivilcoy": {
+    "lat": -34.8964,
+    "lng": -60.018
+  },
+  "BA Interior|San Pedro": {
+    "lat": -33.6786,
+    "lng": -59.6664
+  },
+  "BA Interior|Coronel Rosales": {
+    "lat": -38.8778,
+    "lng": -62.0678
+  },
+  "BA Interior|Tres Arroyos": {
+    "lat": -38.3739,
+    "lng": -60.2761
+  },
+  "BA Interior|Chacabuco": {
+    "lat": -34.6423,
+    "lng": -60.4735
+  },
+  "BA Interior|9 de Julio": {
+    "lat": -35.4444,
+    "lng": -60.8833
+  },
+  "BA Interior|Trenque Lauquen": {
+    "lat": -35.9758,
+    "lng": -62.7333
+  },
+  "BA Interior|Balcarce": {
+    "lat": -37.8461,
+    "lng": -58.2569
+  },
+  "BA Interior|Bragado": {
+    "lat": -35.1197,
+    "lng": -60.4931
+  },
+  "BA Interior|General Alvarado": {
+    "lat": -38.2686,
+    "lng": -57.8386
+  },
+  "BA Interior|Lincoln": {
+    "lat": -34.8628,
+    "lng": -61.515
+  },
+  "BA Interior|Pehuajó": {
+    "lat": -35.8078,
+    "lng": -61.8917
+  },
+  "BA Interior|Chascomús": {
+    "lat": -35.5742,
+    "lng": -58.0128
+  },
+  "BA Interior|Coronel Suárez": {
+    "lat": -37.4522,
+    "lng": -61.9367
+  },
+  "BA Interior|Lobos": {
+    "lat": -35.1856,
+    "lng": -59.0958
+  },
+  "BA Interior|Baradero": {
+    "lat": -33.8083,
+    "lng": -59.5
+  },
+  "BA Interior|Ramallo": {
+    "lat": -33.4839,
+    "lng": -60.0136
+  },
+  "BA Interior|Pinamar": {
+    "lat": -37.1067,
+    "lng": -56.8611
+  },
+  "BA Interior|Salto": {
+    "lat": -34.2856,
+    "lng": -60.2494
+  },
+  "BA Interior|Patagones": {
+    "lat": -40.7975,
+    "lng": -62.9808
+  },
+  "BA Interior|Bolívar": {
+    "lat": -36.2333,
+    "lng": -61.1167
+  },
+  "BA Interior|Villa Gesell": {
+    "lat": -37.2633,
+    "lng": -56.9733
+  },
+  "BA Interior|Saladillo": {
+    "lat": -35.6333,
+    "lng": -59.7833
+  },
+  "BA Interior|25 de Mayo": {
+    "lat": -35.4333,
+    "lng": -60.1667
+  },
+  "BA Interior|General Villegas": {
+    "lat": -35.0333,
+    "lng": -63.0167
+  },
+  "BA Interior|Mar Chiquita": {
+    "lat": -37.6167,
+    "lng": -57.7333
+  },
+  "BA Interior|Villarino": {
+    "lat": -38.9333,
+    "lng": -62.7
+  },
+  "BA Interior|Brandsen": {
+    "lat": -35.1667,
+    "lng": -58.2333
+  },
+  "BA Interior|Arrecifes": {
+    "lat": -34.0667,
+    "lng": -60.1
+  },
+  "BA Interior|Dolores": {
+    "lat": -36.3131,
+    "lng": -57.6739
+  },
+  "BA Interior|Colón": {
+    "lat": -34.4667,
+    "lng": -61.1167
+  },
+  "BA Interior|Las Flores": {
+    "lat": -36.0167,
+    "lng": -59.1
+  },
+  "BA Interior|San Antonio de Areco": {
+    "lat": -34.2667,
+    "lng": -59.4833
+  },
+  "BA Interior|Magdalena": {
+    "lat": -35.0833,
+    "lng": -57.5167
+  },
+  "BA Interior|San Andrés de Giles": {
+    "lat": -34.4667,
+    "lng": -59.45
+  },
+  "BA Interior|Rojas": {
+    "lat": -34.2,
+    "lng": -60.7333
+  },
+  "BA Interior|Monte": {
+    "lat": -35.45,
+    "lng": -58.8
+  },
+  "BA Interior|Coronel Pringles": {
+    "lat": -37.9667,
+    "lng": -61.3667
+  },
+  "BA Interior|Carlos Casares": {
+    "lat": -35.6167,
+    "lng": -61.3667
+  },
+  "BA Interior|General Viamonte": {
+    "lat": -34.9333,
+    "lng": -61.1
+  },
+  "BA Interior|General Juan Madariaga": {
+    "lat": -37.0,
+    "lng": -57.1333
+  },
+  "BA Interior|Saavedra": {
+    "lat": -37.6,
+    "lng": -62.4
+  },
+  "BA Interior|Benito Juárez": {
+    "lat": -37.6833,
+    "lng": -59.8
+  },
+  "BA Interior|Ayacucho": {
+    "lat": -37.15,
+    "lng": -58.4833
+  },
+  "BA Interior|General Belgrano": {
+    "lat": -35.7667,
+    "lng": -58.5
+  },
+  "BA Interior|Navarro": {
+    "lat": -35.0,
+    "lng": -59.2667
+  },
+  "BA Interior|Rivadavia": {
+    "lat": -35.4833,
+    "lng": -63.0833
+  },
+  "BA Interior|Daireaux": {
+    "lat": -36.6,
+    "lng": -61.75
+  },
+  "BA Interior|Lobería": {
+    "lat": -38.15,
+    "lng": -58.8
+  },
+  "BA Interior|General Las Heras": {
+    "lat": -34.9167,
+    "lng": -58.9167
+  },
+  "BA Interior|Adolfo Alsina": {
+    "lat": -37.1667,
+    "lng": -62.75
+  },
+  "BA Interior|Carmen de Areco": {
+    "lat": -34.3833,
+    "lng": -59.8333
+  },
+  "BA Interior|Leandro N. Alem": {
+    "lat": -34.4833,
+    "lng": -61.5
+  },
+  "BA Interior|Rauch": {
+    "lat": -36.7667,
+    "lng": -59.0833
+  },
+  "BA Interior|Puán": {
+    "lat": -37.55,
+    "lng": -62.7667
+  },
+  "BA Interior|General Arenales": {
+    "lat": -34.35,
+    "lng": -61.55
+  },
+  "BA Interior|Coronel Dorrego": {
+    "lat": -38.7167,
+    "lng": -60.9167
+  },
+  "BA Interior|Capitán Sarmiento": {
+    "lat": -34.15,
+    "lng": -59.7833
+  },
+  "BA Interior|Tornquist": {
+    "lat": -38.1,
+    "lng": -62.2333
+  },
+  "BA Interior|General Paz": {
+    "lat": -35.5833,
+    "lng": -58.35
+  },
+  "BA Interior|Carlos Tejedor": {
+    "lat": -35.4167,
+    "lng": -62.4
+  },
+  "BA Interior|Roque Pérez": {
+    "lat": -35.4,
+    "lng": -59.6
+  },
+  "BA Interior|General Alvear": {
+    "lat": -36.05,
+    "lng": -60.0167
+  },
+  "BA Interior|Alberti": {
+    "lat": -34.85,
+    "lng": -60.2667
+  },
+  "BA Interior|General Pinto": {
+    "lat": -34.85,
+    "lng": -61.85
+  },
+  "BA Interior|Adolfo Gonzales Chaves": {
+    "lat": -38.05,
+    "lng": -60.1
+  },
+  "BA Interior|Punta Indio": {
+    "lat": -35.3667,
+    "lng": -57.3167
+  },
+  "BA Interior|Guaminí": {
+    "lat": -37.0167,
+    "lng": -62.4
+  },
+  "BA Interior|Suipacha": {
+    "lat": -34.7667,
+    "lng": -59.6833
+  },
+  "BA Interior|Laprida": {
+    "lat": -37.55,
+    "lng": -60.7833
+  },
+  "BA Interior|General La Madrid": {
+    "lat": -37.9667,
+    "lng": -61.25
+  },
+  "BA Interior|Maipú": {
+    "lat": -36.85,
+    "lng": -57.8833
+  },
+  "BA Interior|Florentino Ameghino": {
+    "lat": -34.9667,
+    "lng": -62.55
+  },
+  "BA Interior|Tapalqué": {
+    "lat": -36.35,
+    "lng": -60.0167
+  },
+  "BA Interior|Hipólito Yrigoyen": {
+    "lat": -36.3167,
+    "lng": -61.7167
+  },
+  "BA Interior|Castelli": {
+    "lat": -36.0833,
+    "lng": -57.8
+  },
+  "BA Interior|Salliqueló": {
+    "lat": -36.3,
+    "lng": -62.9667
+  },
+  "BA Interior|Tres Lomas": {
+    "lat": -36.45,
+    "lng": -62.85
+  },
+  "BA Interior|San Cayetano": {
+    "lat": -38.35,
+    "lng": -59.5
+  },
+  "BA Interior|Monte Hermoso": {
+    "lat": -38.9833,
+    "lng": -61.2833
+  },
+  "BA Interior|Pellegrini": {
+    "lat": -36.25,
+    "lng": -63.15
+  },
+  "BA Interior|Lezama": {
+    "lat": -35.25,
+    "lng": -57.8833
+  },
+  "BA Interior|General Lavalle": {
+    "lat": -36.4333,
+    "lng": -56.9167
+  },
+  "BA Interior|Pila": {
+    "lat": -36.25,
+    "lng": -58.15
+  },
+  "BA Interior|General Guido": {
+    "lat": -36.6667,
+    "lng": -57.7833
+  },
+  "BA Interior|Tordillo": {
+    "lat": -36.55,
+    "lng": -57.15
+  },
+  "La Pampa|La Pampa": {
+    "lat": -36.6167,
+    "lng": -64.2833
+  },
+  "Neuquen|Neuquen": {
+    "lat": -38.9516,
+    "lng": -68.0591
+  },
+  "Rio Negro|Rio Negro": {
+    "lat": -39.0333,
+    "lng": -67.5833
+  },
+  "Chubut|Chubut": {
+    "lat": -45.8641,
+    "lng": -67.4966
+  },
+  "Santa Cruz|Santa Cruz": {
+    "lat": -51.623,
+    "lng": -69.2168
+  },
+  "Tierra del Fuego|Tierra del Fuego": {
+    "lat": -54.8019,
+    "lng": -68.303
+  }
+}
