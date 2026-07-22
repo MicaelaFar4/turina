@@ -157,7 +157,7 @@ async function main() {
         },
       },
       update: {},
-      create: { localidadId, distribuidorId, marca },
+      create: { localidadId, distribuidorId, marca: marca ?? "" },
     });
     asignacionesCreadas++;
   }
